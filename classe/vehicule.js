@@ -7,9 +7,6 @@ export class Vehicule {
     }
 
     display() {
-        this.marque,
-        this.modele,
-        this.kilometrage,
-        this.annee
+        return `<b>${this.constructor.name} : </b>${this.marque} - ${this.modele} - ${this.kilometrage}km - ${this.annee}`;
     }
 }

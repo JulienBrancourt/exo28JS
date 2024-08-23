@@ -9,6 +9,10 @@ console.log(voiture1);
 
 const moto1 = new Moto("BMW", "R1150R Rockster", 65000, 2005)
 
-vehicule1.innerHTML = `<b>${voiture1.constructor.name} : </b> ${voiture1.marque} - ${voiture1.modele} - ${voiture1.kilometrage}km - ${voiture1.annee} - ${voiture1.clim}`
-vehicule2.innerHTML = `<b>${moto1.constructor.name} : </b> ${moto1.marque} - ${moto1.modele} - ${moto1.kilometrage}km - ${moto1.annee}`;
+vehicule1.innerHTML = voiture1.display();
+vehicule2.innerHTML = moto1.display();
+
+console.log(moto1.display());
+console.log(voiture1.display());
+
 
